@@ -67,10 +67,10 @@ python main.py --video_folder <path/to/videos> --desc_file <path/to/original_des
 - --target_file: File where the enhanced descriptions will be saved.
 - --api_key: API key for accessing the AI processing features.
 - --method: The processing method to use. Options are:
-- - GPT4V: Use only GPT-4V for video description.
-- - GPT4VHA: Combine GPT-4V with Human Annotation.
-- - GPT4AD: GPT-4V with Accessibility Guidelines.
-- - GPT4VADHA: Combination of GPT-4V, Accessibility Guidelines, and Human Annotation.
+ - GPT4V: Use only GPT-4V for video description.
+ - GPT4VHA: Combine GPT-4V with Human Annotation.
+ - GPT4AD: GPT-4V with Accessibility Guidelines.
+ - GPT4VADHA: Combination of GPT-4V, Accessibility Guidelines, and Human Annotation.
 
 
 ## License
