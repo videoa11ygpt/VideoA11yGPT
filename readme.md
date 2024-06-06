@@ -57,10 +57,21 @@ python ./utils/cut_video.py --json_file <Path to the JSON file containing the vi
 
 ## Generate Video Descriptions
 
-- 
+- Run the script below with the necessary arguments: 
+
 ```
-python adv_train_PSP_S1.py --task train --model_save_root MODEL_SAVE_ROOT --data_split train --image_save_root RODPatch_ROOT --image_save_root_adv AdvPatch_ROOT --max_iter_d 2000 --learning_rate_d 0.01 --max_iter_adv 1000 --learning_rate_adv 0.003 --batch_size 8 --val_batch_size 32 --num_epoch 15 --with_psp --wandb_usr USER_NAME --wandb_proj PROJECT_NAME
+python main.py --video_folder <path/to/videos> --desc_file <path/to/original_descriptions.json> --target_file <path/to/target_descriptions.json> --api_key <your_OPENAI_api_key> --method <one from the four provided>
 ```
+- --video_folder: Directory containing video files.
+- --desc_file: File containing original video descriptions.
+- --target_file: File where the enhanced descriptions will be saved.
+- --api_key: API key for accessing the AI processing features.
+- --method: The processing method to use. Options are:
+- - GPT4V: Use only GPT-4V for video description.
+- - GPT4VHA: Combine GPT-4V with Human Annotation.
+- - GPT4AD: GPT-4V with Accessibility Guidelines.
+- - GPT4VADHA: Combination of GPT-4V, Accessibility Guidelines, and Human Annotation.
+
 
 ## License
 
