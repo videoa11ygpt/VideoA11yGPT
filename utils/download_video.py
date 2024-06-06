@@ -38,9 +38,9 @@ def main(max_workers, target_folder, video_ids_file):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Download YouTube videos")
-    parser.add_argument("max_workers", type=int, help="Maximum number of download threads")
-    parser.add_argument("target_folder", type=str, help="Folder to download the videos into")
-    parser.add_argument("video_ids_file", type=str, help="File containing YouTube video IDs, one per line")
+    parser.add_argument("--max_workers", type=int, help="Maximum number of download threads")
+    parser.add_argument("--target_folder", type=str, help="Folder to download the videos into")
+    parser.add_argument("--video_ids_file", type=str, help="File containing YouTube video IDs, one per line")
 
     args = parser.parse_args()
     main(args.max_workers, args.target_folder, args.video_ids_file)
