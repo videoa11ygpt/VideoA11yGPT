@@ -24,8 +24,8 @@
 
 - Clone this repo:
 ```bash
-git clone https://github.com/USC-CV/CARLA_image.git
-cd CARLA_image/CARLA
+git clone https://github.com/videoa11ygpt/VideoA11yGPT.git
+cd VideoA11yGPT
 ```
 
 - Dependencies
@@ -33,7 +33,7 @@ cd CARLA_image/CARLA
 pip install -r requirements.txt
 ```
 
-### Generate adversarial images
+## Prepare Data from Original Datasets
 
 - Generated attacked images in object only mode. You can read the py file to check other parameters, such as the attack parameters.
 - There are two attack modes(robustDpatch, Advpatch)
