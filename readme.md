@@ -35,10 +35,15 @@ pip install -r requirements.txt
 
 ## Prepare Data from Original Datasets
 
-- Generated attacked images in object only mode. You can read the py file to check other parameters, such as the attack parameters.
-- There are two attack modes(robustDpatch, Advpatch)
+- We provided the original metadata files from VALOR32K and YouCook2 datasets, they are in .json format.
+
+### Download Videos from YouTube
+
+- Prepare your list of YouTube video IDs in a text file (e.g., `video_ids.txt`) from the dataset files.
+- Run the script below:
+  
 ```
-python adv_train_PSP_S1.py --task generate --attack_name Advpatch --data_split train --image_save_root IMG_SAVE_FOLDER
+python ./utils/download_video.py --max_workers <max_workers> --target_folder <Your folder to store videos> --video_ids_file <video_ids_file (e.g., `video_ids.txt`)>
 ```
 
 - Generated attacked videos in object only mode. IMG_SAVE_FOLDER is where to save generated videos.
