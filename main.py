@@ -275,11 +275,11 @@ full_dict = {} # Target dictionary
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process some parameters.")
-    parser.add_argument("video_folder", type=str, help="Path to the folder containing videos.")
-    parser.add_argument("desc_file", type=str, help="Path to the file with original human annotation.")
-    parser.add_argument("target_file", type=str, help="Path to the file to store the revised descriptions.")
-    parser.add_argument("api_key", type=str, help="API key for OpenAI")
-    parser.add_argument("method", type=str, choices=["GPT4V", "GPT4VHA", "GPT4VAD", "GPT4VADHA"], help="Method to use for processing. GPT4VHA = GPT-4V + Human Annotation; GPT4AD = GPT-4V + AD Guidelines; GPT4VADHA = GPT4-V + AD Guidelines + Human Annotation."
+    parser.add_argument("--video_folder", type=str, help="Path to the folder containing videos.")
+    parser.add_argument("--desc_file", type=str, help="Path to the file with original human annotation.")
+    parser.add_argument("--target_file", type=str, help="Path to the file to store the revised descriptions.")
+    parser.add_argument("--api_key", type=str, help="API key for OpenAI")
+    parser.add_argument("--method", type=str, choices=["GPT4V", "GPT4VHA", "GPT4VAD", "GPT4VADHA"], help="Method to use for processing. GPT4VHA = GPT-4V + Human Annotation; GPT4AD = GPT-4V + AD Guidelines; GPT4VADHA = GPT4-V + AD Guidelines + Human Annotation."
     )
 
     args = parser.parse_args()
