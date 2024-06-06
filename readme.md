@@ -64,13 +64,13 @@ python main.py --video_folder <path/to/videos> --desc_file <path/to/original_des
 ```
 - --video_folder: Directory containing video files.
 - --desc_file: File containing original video descriptions.
-- --target_file: File where the enhanced descriptions will be saved.
+- --target_file: File where the generated video descriptions will be saved.
 - --api_key: API key for accessing the AI processing features.
-- --method: The processing method to use. Options are:
--- GPT4V: Use only GPT-4V for video description.
--- GPT4VHA: Combine GPT-4V with Human Annotation.
--- GPT4AD: GPT-4V with Accessibility Guidelines.
--- GPT4VADHA: Combination of GPT-4V, Accessibility Guidelines, and Human Annotation.
+- --method: The processing method to use. Each of them represents a prompt. Options are:
+    - GPT4V: Use only GPT-4V for video description (_GPT-4V_).
+    - GPT4VHA: Combine GPT-4V with Human Annotation (_GPT-4V + Human Annotation_).
+    - GPT4AD: GPT-4V with our AD Guidelines (_VideoA11yGPT w/o HA_).
+    - GPT4VADHA: Combination of GPT-4V, our AD Guidelines, and Human Annotation (_VideoA11yGPT_).
 
 
 ## License
