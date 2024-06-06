@@ -70,7 +70,7 @@ python main.py --video_folder <path/to/videos> --desc_file <path/to/original_des
     - GPT4V: Use only GPT-4V for video description (_GPT-4V_).
     - GPT4VHA: Combine GPT-4V with Human Annotation (_GPT-4V + Human Annotation_).
     - GPT4AD: GPT-4V with our AD Guidelines (_VideoA11yGPT w/o HA_).
-    - GPT4VADHA: Combination of GPT-4V, our AD Guidelines, and Human Annotation (_VideoA11yGPT_).
+    - GPT4VADHA: Combination of GPT-4V, our AD Guidelines, and Human Annotation (**_VideoA11yGPT_**).
 
 
 ## License
