@@ -1,6 +1,6 @@
 # VideoA11yGPT
 
-![Process Pipeline](img/pipeline.png)
+![Process Pipeline](img/pipeline.pdf)
 
 ## Files
 ```shell
