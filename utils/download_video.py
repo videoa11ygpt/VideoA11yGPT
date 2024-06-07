@@ -33,7 +33,7 @@ def main(max_workers, target_folder, video_ids_file):
         items = file.read().splitlines()
 
     # Use ThreadPoolExecutor to parallelize downloads
-    with ThreadPool_then runoolExecutor(max_workers=max_workers) as executor:
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
         executor.map(lambda item: download(item, target_folder), items)
 
 if __name__ == "__main__":
