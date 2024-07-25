@@ -1,4 +1,4 @@
-# VideoA11yGPT
+# VideoA11yGPT: Method and Datasets for Accessible Video Description
 
 ![Process Pipeline](img/pipeline.png)
 
